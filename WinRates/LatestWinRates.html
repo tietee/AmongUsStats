@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-image: url('../images/background.gif');
+    }
+
+    .title1 {
+      position: absolute;
+      top: 80px;
+      left: 330px;
+      font-family: Arial;
+      font-size: 35px;
+      color: white;
+    }
+
+    .title2 {
+      position: absolute;
+      top: 80px;
+      right: 330px;
+      font-family: Arial;
+      font-size: 35px;
+      color: white;
+    }
+
+    a:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: grey;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:active {
+      color: grey;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    table {
+      counter-reset: rowNumber+1;
+    }
+
+    table tr:not(:first-child) {
+        counter-increment: rowNumber;
+    }
+
+    table tr td:first-child::before {
+      content: counter(rowNumber) ".";
+      padding-right: 0.3em;
+      text-align: right;
+    }
+  </style>
+  <head>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <img src="../images/Workmaps/latestWinRatesWorkmap.png" alt="workmap" usemap="#workmap" class='leaderboardCenter'>
+
+    <map name="workmap">
+      <area shape="rect" coords="0,805,155,885" alt="Back" href="WinRates.html">
+    </map>
+
+    <div class="title1">Overall Win Rates</div>
+    <table id="overallTable" class="overall_win">
+      <thead>
+        <tr>
+          <th style="width:165px; text-align:left;" onclick="sortTableAlphaA(0)">Player Name</th>
+          <th style="width:150px;" onclick="sortTableNumA(1)">Overall Win %</th>
+          <th style="width:150px;" onclick="sortTableNumA(2)">Imposter Win %</th>
+          <th style="width:150px;" onclick="sortTableNumA(3)">Crewmate Win %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:325px;"><img src="../images/Models/AlanVo.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/AlanVo.html">Alan Vo</a></td>
+          <td>62</td>
+          <td>54</td>
+          <td>63</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/BenjaminPerdido.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BenjaminPerdido.html">Benjamin Perdido</a></td>
+          <td>56</td>
+          <td>48</td>
+          <td>58</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/BenjaminWerner.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BenjaminWerner.html">Benjamin Werner</a></td>
+          <td>55</td>
+          <td>50</td>
+          <td>56</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/BrandonChaplin.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BrandonChaplin.html">Brandon Chaplin</a></td>
+          <td>67</td>
+          <td>57</td>
+          <td>69</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/BrianPhan.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BrianPhan.html">Brian Phan</a></td>
+          <td>55</td>
+          <td>37</td>
+          <td>59</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/ChristianMattila.png" style="width:36px;height:50px;"
+          valign="middle"><a href="../individualStats/ChristianMattila.html">Christian Mattila</a></td>
+          <td>71</td>
+          <td>75</td>
+          <td>71</td>
+        </tr> -->
+        <tr>
+          <td><img src="../images/Models/ChristopherTrenary.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/ChristopherTrenary.html">Christopher Trenary</a></td>
+          <td>41</td>
+          <td>8</td>
+          <td>48</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/CoreyMichaud.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/CoreyMichaud.html">Corey Michaud</a></td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/DanielVelicu.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/DanielVelicu.html">Daniel Velicu</a></td>
+          <td>50</td>
+          <td>66</td>
+          <td>47</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/DanielWest.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/DanielWest.html">Daniel West</a></td>
+          <td>55</td>
+          <td>46</td>
+          <td>56</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/EnriqueRodriguez.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/EnriqueRodriguez.html">Enrique Rodriguez</a></td>
+          <td>62</td>
+          <td>61</td>
+          <td>63</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/FionaBarry.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/FionaBarry.html">Fiona Barry</a></td>
+          <td>53</td>
+          <td>34</td>
+          <td>57</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/GabrielVelicu.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/GabrielVelicu.html">Gabriel Velicu</a></td>
+          <td>49</td>
+          <td>47</td>
+          <td>49</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/JohnDau.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/JohnDau.html">John Dau</a></td>
+          <td>55</td>
+          <td>67</td>
+          <td>53</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/LiorBarak.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/LiorBarak.html">Lior Barak</a></td>
+          <td>52</td>
+          <td>36</td>
+          <td>57</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/NicholasJordan.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/NicholasJordan.html">Nicholas Jordan</a></td>
+          <td>42</td>
+          <td>36</td>
+          <td>44</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/PeterPetracca.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/PeterPetracca.html">Peter Petracca</a></td>
+          <td>67</td>
+          <td>0</td>
+          <td>80</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/RandyLee.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/RandyLee.html">Randy Lee</a></td>
+          <td>56</td>
+          <td>70</td>
+          <td>54</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/StevenRogers.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/StevenRogers.html">Steven Rogers</a></td>
+          <td>48</td>
+          <td>41</td>
+          <td>49</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/TatianaVazansky.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/TatianaVazansky.html">Tatiana Vazansky</a></td>
+          <td>60</td>
+          <td>66</td>
+          <td>58</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/TristonPassmore.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/TristonPassmore.html">Triston Passmore</a></td>
+          <td>56</td>
+          <td>28</td>
+          <td>64</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/TylerTran.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/TylerTran.html">Tyler Tran</a></td>
+          <td>59</td>
+          <td>66</td>
+          <td>58</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+    function sortTableAlphaA(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("overallTable");
+      switching = true;
+      //Set the sorting direction to ascending:
+      dir = "asc";
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          /*check if the two rows should switch place,
+          based on the direction, asc or desc:*/
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch= true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          //Each time a switch is done, increase this count by 1:
+          switchcount ++;
+        } else {
+          /*If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again.*/
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+    </script>
+
+    <script>
+    function sortTableNumA(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("overallTable");
+      switching = true;
+      //Set the sorting direction to ascending:
+      dir = "asc";
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          /*check if the two rows should switch place,
+          based on the direction, asc or desc:*/
+          if (dir == "asc") {
+            if (Number(x.innerHTML) < Number(y.innerHTML)) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch= true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (Number(x.innerHTML) > Number(y.innerHTML)) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          //Each time a switch is done, increase this count by 1:
+          switchcount ++;
+        } else {
+          /*If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again.*/
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+    </script>
+
+    <div class="title2">Recent Win Rates</div>
+    <table id="recentTable" class="recent_win">
+      <thead>
+        <tr>
+          <th style="width:165px; text-align:left;" onclick="sortTableAlphaB(0)">Player Name</th>
+          <th style="width:150px;" onclick="sortTableNumB(1)">Recent Win %</th>
+          <th style="width:150px;" onclick="sortTableNumB(2)">Imposter Win %</th>
+          <th style="width:150px;" onclick="sortTableNumB(3)">Crewmate Win %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:325px;"><img src="../images/Models/AlanVo.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/AlanVo.html">Alan Vo</a></td>
+          <td>63</td>
+          <td>67</td>
+          <td>62</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/BenjaminPerdido.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BenjaminPerdido.html">Benjamin Perdido</a></td>
+          <td>56</td>
+          <td>48</td>
+          <td>58</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/BenjaminWerner.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BenjaminWerner.html">Benjamin Werner</a></td>
+          <td>55</td>
+          <td>50</td>
+          <td>56</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/BrandonChaplin.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BrandonChaplin.html">Brandon Chaplin</a></td>
+          <td>67</td>
+          <td>57</td>
+          <td>69</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/BrianPhan.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BrianPhan.html">Brian Phan</a></td>
+          <td>68</td>
+          <td>50</td>
+          <td>70</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/ChristianMattila.png" style="width:36px;height:50px;"
+          valign="middle"><a href="../individualStats/ChristianMattila.html">Christian Mattila</a></td>
+          <td>71</td>
+          <td>75</td>
+          <td>71</td>
+        </tr> -->
+        <tr>
+          <td><img src="../images/Models/ChristopherTrenary.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/ChristopherTrenary.html">Christopher Trenary</a></td>
+          <td>34</td>
+          <td>14</td>
+          <td>41</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/CoreyMichaud.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/CoreyMichaud.html">Corey Michaud</a></td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/DanielVelicu.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/DanielVelicu.html">Daniel Velicu</a></td>
+          <td>50</td>
+          <td>66</td>
+          <td>47</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/DanielWest.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/DanielWest.html">Daniel West</a></td>
+          <td>55</td>
+          <td>46</td>
+          <td>56</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/EnriqueRodriguez.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/EnriqueRodriguez.html">Enrique Rodriguez</a></td>
+          <td>63</td>
+          <td>50</td>
+          <td>64</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/FionaBarry.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/FionaBarry.html">Fiona Barry</a></td>
+          <td>53</td>
+          <td>34</td>
+          <td>57</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/GabrielVelicu.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/GabrielVelicu.html">Gabriel Velicu</a></td>
+          <td>46</td>
+          <td>44</td>
+          <td>46</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/JohnDau.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/JohnDau.html">John Dau</a></td>
+          <td>55</td>
+          <td>67</td>
+          <td>53</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/LiorBarak.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/LiorBarak.html">Lior Barak</a></td>
+          <td>52</td>
+          <td>36</td>
+          <td>57</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/NicholasJordan.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/NicholasJordan.html">Nicholas Jordan</a></td>
+          <td>40</td>
+          <td>20</td>
+          <td>43</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/PeterPetracca.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/PeterPetracca.html">Peter Petracca</a></td>
+          <td>67</td>
+          <td>0</td>
+          <td>80</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/RandyLee.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/RandyLee.html">Randy Lee</a></td>
+          <td>58</td>
+          <td>100</td>
+          <td>57</td>
+        </tr>
+        <!--<tr>
+          <td><img src="../images/Models/StevenRogers.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/StevenRogers.html">Steven Rogers</a></td>
+          <td>56</td>
+          <td>67</td>
+          <td>55</td>
+        </tr>-->
+        <!--<tr>
+          <td><img src="../images/Models/TatianaVazansky.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/TatianaVazansky.html">Tatiana Vazansky</a></td>
+          <td>60</td>
+          <td>66</td>
+          <td>58</td>
+        </tr>-->
+        <tr>
+          <td><img src="../images/Models/TristonPassmore.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/TristonPassmore.html">Triston Passmore</a></td>
+          <td>53</td>
+          <td>25</td>
+          <td>56</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/TylerTran.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/TylerTran.html">Tyler Tran</a></td>
+          <td>54</td>
+          <td>50</td>
+          <td>55</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+    function sortTableAlphaB(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("recentTable");
+      switching = true;
+      //Set the sorting direction to ascending:
+      dir = "asc";
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          /*check if the two rows should switch place,
+          based on the direction, asc or desc:*/
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch= true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          //Each time a switch is done, increase this count by 1:
+          switchcount ++;
+        } else {
+          /*If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again.*/
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+    </script>
+
+    <script>
+    function sortTableNumB(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("recentTable");
+      switching = true;
+      //Set the sorting direction to ascending:
+      dir = "asc";
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          /*check if the two rows should switch place,
+          based on the direction, asc or desc:*/
+          if (dir == "asc") {
+            if (Number(x.innerHTML) < Number(y.innerHTML)) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch= true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (Number(x.innerHTML) > Number(y.innerHTML)) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          //Each time a switch is done, increase this count by 1:
+          switchcount ++;
+        } else {
+          /*If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again.*/
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+    </script>
+  </body>
+</html>

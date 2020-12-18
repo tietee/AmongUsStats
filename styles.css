@@ -1,0 +1,366 @@
+.homeCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.individualCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.individualStatsCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.leaderboardCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.choiceCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+/*----------------------------------------------------------------------------*/
+.filterCenter {
+  position: absolute;
+  top: 36.3%;
+  left: 50.43%;
+  transform: translate(-50%, -50%);
+  width: 320.5px;
+  height: 58px;
+  font-family: Arial;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  outline-style: solid;
+  outline-color:white;
+}
+/*----------------------------------------------------------------------------*/
+.sliderCenter1 {
+  position: absolute;
+  top: 47%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  font-family: Arial;
+  font-size: 30px;
+  color: white;
+}
+/*----------------------------------------------------------------------------*/
+.sliderCenter2 {
+  position: absolute;
+  top: 47%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  font-family: Arial;
+  font-size: 30px;
+  color: white;
+}
+/*----------------------------------------------------------------------------*/
+.fixed_header{
+  width: 780px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  position: absolute;
+  top: 50%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  margin-top: 220px;
+  font-size: 30px;
+  font-family: Arial;
+}
+
+.fixed_header tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 350px;
+  color: white;
+}
+
+.fixed_header thead tr {
+   display: block;
+}
+
+.fixed_header thead {
+  background: black;
+  color:#fff;
+  text-decoration: underline;
+}
+
+.fixed_header th, .fixed_header td {
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+}
+/*----------------------------------------------------------------------------*/
+.overall_win{
+  width: 660px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  position: absolute;
+  top: 40%;
+  left: 28.35%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.overall_win tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 615px;
+  color: white;
+}
+
+.overall_win thead tr {
+   display: block;
+}
+
+.overall_win thead {
+  color:#fff;
+  text-decoration: underline;
+}
+
+.overall_win td {
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+}
+/*----------------------------------------------------------------------------*/
+.recent_win{
+  width: 660px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  position: absolute;
+  top: 40%;
+  left: 71.25%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.recent_win tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 615px;
+  color: white;
+}
+
+.recent_win thead tr {
+   display: block;
+}
+
+.recent_win thead {
+  color:#fff;
+  text-decoration: underline;
+}
+
+.recent_win td {
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+}
+/*----------------------------------------------------------------------------*/
+.alltime_win{
+  width: 1370px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.alltime_win tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 615px;
+  color: white;
+}
+
+.alltime_win thead tr {
+   display: block;
+}
+
+.alltime_win thead {
+  color:#fff;
+  text-decoration: underline;
+}
+
+.alltime_win td {
+  padding: 5px;
+  text-align: left;
+  width: 400px;
+}
+/*----------------------------------------------------------------------------*/
+.alltime_kd{
+  width: 1370px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.alltime_kd tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 615px;
+  color: white;
+}
+
+.alltime_kd thead tr {
+   display: block;
+}
+
+.alltime_kd thead {
+  color:#fff;
+  text-decoration: underline;
+}
+
+.alltime_kd td {
+  padding: 5px;
+  text-align: left;
+  width: 400px;
+}
+/*----------------------------------------------------------------------------*/
+.alltime_stat{
+  width: 1370px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  font-family: Arial;
+  border-color:red;
+}
+
+.alltime_stat tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 605px;
+  color: white;
+  border-color:red;
+}
+
+.alltime_stat thead tr {
+   display: block;
+   border-color:red;
+}
+
+.alltime_stat thead {
+  color:#fff;
+  text-decoration: underline;
+  border-color:red;
+  font-size: 10px;
+}
+
+.alltime_stat td {
+  padding: 5px;
+  text-align: left;
+  width: 400px;
+  border-color:red;
+  font-size: 12px;
+}
+/*----------------------------------------------------------------------------*/
+.overall_kd{
+  width: 660px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  position: absolute;
+  top: 40%;
+  left: 28.35%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.overall_kd tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 580px;
+  color: white;
+}
+
+.overall_kd thead tr {
+   display: block;
+}
+
+.overall_kd thead {
+  color:#fff;
+  text-decoration: underline;
+}
+
+.overall_kd td {
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+}
+/*----------------------------------------------------------------------------*/
+.recent_kd{
+  width: 660px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  position: absolute;
+  top: 40%;
+  left: 71.25%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.recent_kd tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 580px;
+  color: white;
+}
+
+.recent_kd thead tr {
+   display: block;
+}
+
+.recent_kd thead {
+  color:#fff;
+  text-decoration: underline;
+}
+
+.recent_kd td {
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+}

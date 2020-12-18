@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-image: url('../images/background.gif');
+    }
+
+    .title1 {
+      position: absolute;
+      top: 80px;
+      left: 40%;
+      font-family: Arial;
+      font-size: 35px;
+      color: white;
+    }
+
+    a:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: grey;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:active {
+      color: grey;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    table {
+      counter-reset: rowNumber+1;
+    }
+
+    table tr:not(:first-child) {
+        counter-increment: rowNumber;
+    }
+
+    table tr td:first-child::before {
+      content: counter(rowNumber) ".";
+      padding-right: 0.3em;
+      text-align: right;
+    }
+  </style>
+  <head>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <img src="../images/Workmaps/allTimeWinRatesWorkmap.png" alt="workmap" usemap="#workmap" class='leaderboardCenter'>
+
+    <map name="workmap">
+      <area shape="rect" coords="0,805,155,885" alt="Back" href="LeaderboardStats.html">
+    </map>
+
+    <div class="title1">All Time Stats</div>
+    <table id="indextable" class="alltime_stat">
+      <thead>
+        <tr>
+          <th style="width:155px; text-align:left;"><a href="javascript:SortTable(0,'T');">Player Name</th>
+          <th style="width:25px;"><a href="javascript:SortTable(1,'N');">Bodies Reported</th>
+          <th style="width:25px;"><a href="javascript:SortTable(2,'N');">Emergencies Called</th>
+          <th style="width:60px;"><a href="javascript:SortTable(3,'N');">Task Completed</th>
+          <th style="width:60px;"><a href="javascript:SortTable(4,'N');">All Tasks Completed</th>
+          <th style="width:60px;"><a href="javascript:SortTable(5,'N');">Sabotages Fixed</th>
+          <th style="width:60px;"><a href="javascript:SortTable(6,'N');">Imposter Kills</th>
+          <th style="width:60px;"><a href="javascript:SortTable(7,'N');">Times Murdered</th>
+          <th style="width:60px;"><a href="javascript:SortTable(8,'N');">Times Ejected</th>
+          <th style="width:60px;"><a href="javascript:SortTable(9,'N');">Longest Crewmate Streak</th>
+          <th style="width:60px;"><a href="javascript:SortTable(10,'N');">Times Imposter</th>
+          <th style="width:60px;"><a href="javascript:SortTable(11,'N');">Times Crewmate</th>
+          <th style="width:60px;"><a href="javascript:SortTable(12,'N');">Games Started</th>
+          <th style="width:60px;"><a href="javascript:SortTable(13,'N');">Games Finished</th>
+          <th style="width:60px;"><a href="javascript:SortTable(14,'N');">Imposter Vote Wins</th>
+          <th style="width:60px;"><a href="javascript:SortTable(15,'N');">Imposter Kill Wins</th>
+          <th style="width:60px;"><a href="javascript:SortTable(16,'N');">Imposter Sabotage Wins</th>
+          <th style="width:60px;"><a href="javascript:SortTable(17,'N');">Crewmate Vote Wins</th>
+          <th style="width:60px;"><a href="javascript:SortTable(18,'N');">Crewmate Task Wins</th>
+          <th><a href="javascript:SortTable(19,'D','mdy');">Last Updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:1200px;"><img src="../images/Models/AlanVo.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/AlanVo.html">Alan Vo</a></td>
+          <td>38</td>
+          <td>16</td>
+          <td>746</td>
+          <td>88</td>
+          <td>111</td>
+          <td>83</td>
+          <td>64</td>
+          <td>31</td>
+          <td>13</td>
+          <td>33</td>
+          <td>161</td>
+          <td>194</td>
+          <td>190</td>
+          <td>3</td>
+          <td>11</td>
+          <td>4</td>
+          <td>68</td>
+          <td>34</td>
+          <td>12/15/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/BenjaminPerdido.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BenjaminPerdido.html">Benjamin Perdido</a></td>
+          <td>48</td>
+          <td>19</td>
+          <td>547</td>
+          <td>69</td>
+          <td>86</td>
+          <td>71</td>
+          <td>64</td>
+          <td>29</td>
+          <td>10</td>
+          <td>33</td>
+          <td>214</td>
+          <td>247</td>
+          <td>223</td>
+          <td>3</td>
+          <td>11</td>
+          <td>2</td>
+          <td>109</td>
+          <td>14</td>
+          <td>09/14/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/BenjaminWerner.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BenjaminWerner.html">Benjamin Werner</a></td>
+          <td>5</td>
+          <td>0</td>
+          <td>43</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>10</td>
+          <td>4</td>
+          <td>3</td>
+          <td>4</td>
+          <td>16</td>
+          <td>20</td>
+          <td>19</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+          <td>09/27/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/BrandonChaplin.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BrandonChaplin.html">Brandon Chaplin</a></td>
+          <td>16</td>
+          <td>5</td>
+          <td>151</td>
+          <td>15</td>
+          <td>34</td>
+          <td>28</td>
+          <td>25</td>
+          <td>5</td>
+          <td>2</td>
+          <td>14</td>
+          <td>55</td>
+          <td>69</td>
+          <td>68</td>
+          <td>1</td>
+          <td>7</td>
+          <td>0</td>
+          <td>34</td>
+          <td>4</td>
+          <td>09/14/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/BrianPhan.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/BrianPhan.html">Brian Phan</a></td>
+          <td>20</td>
+          <td>8</td>
+          <td>491</td>
+          <td>54</td>
+          <td>51</td>
+          <td>57</td>
+          <td>44</td>
+          <td>21</td>
+          <td>17</td>
+          <td>19</td>
+          <td>106</td>
+          <td>125</td>
+          <td>125</td>
+          <td>1</td>
+          <td>6</td>
+          <td>0</td>
+          <td>37</td>
+          <td>25</td>
+          <td>12/15/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/ChristianMattila.png" style="width:36px;height:50px;"
+          valign="middle"><a href="../individualStats/ChristianMattila.html">Christian Mattila</a></td>
+          <td>1</td>
+          <td>2</td>
+          <td>81</td>
+          <td>6</td>
+          <td>17</td>
+          <td>6</td>
+          <td>9</td>
+          <td>2</td>
+          <td>7</td>
+          <td>4</td>
+          <td>17</td>
+          <td>21</td>
+          <td>21</td>
+          <td>1</td>
+          <td>2</td>
+          <td>0</td>
+          <td>9</td>
+          <td>3</td>
+          <td>09/14/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/ChristopherTrenary.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/ChristopherTrenary.html">Christopher Trenary</a></td>
+          <td>11</td>
+          <td>3</td>
+          <td>239</td>
+          <td>13</td>
+          <td>33</td>
+          <td>27</td>
+          <td>34</td>
+          <td>13</td>
+          <td>12</td>
+          <td>13</td>
+          <td>61</td>
+          <td>74</td>
+          <td>73</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>26</td>
+          <td>3</td>
+          <td>12/15/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/CoreyMichaud.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/CoreyMichaud.html">Corey Michaud</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>27</td>
+          <td>2</td>
+          <td>3</td>
+          <td>2</td>
+          <td>3</td>
+          <td>1</td>
+          <td>6</td>
+          <td>2</td>
+          <td>8</td>
+          <td>10</td>
+          <td>9</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>0</td>
+          <td>08/31/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/DanielVelicu.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/DanielVelicu.html">Daniel Velicu</a></td>
+          <td>36</td>
+          <td>18</td>
+          <td>787</td>
+          <td>103</td>
+          <td>60</td>
+          <td>97</td>
+          <td>121</td>
+          <td>19</td>
+          <td>0</td>
+          <td>38</td>
+          <td>213</td>
+          <td>251</td>
+          <td>248</td>
+          <td>3</td>
+          <td>20</td>
+          <td>2</td>
+          <td>58</td>
+          <td>42</td>
+          <td>12/15/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/DanielWest.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/DanielWest.html">Daniel West</a></td>
+          <td>10</td>
+          <td>4</td>
+          <td>213</td>
+          <td>13</td>
+          <td>13</td>
+          <td>15</td>
+          <td>32</td>
+          <td>19</td>
+          <td>1</td>
+          <td>13</td>
+          <td>75</td>
+          <td>88</td>
+          <td>80</td>
+          <td>4</td>
+          <td>2</td>
+          <td>0</td>
+          <td>36</td>
+          <td>6</td>
+          <td>09/27/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/EnriqueRodriguez.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/EnriqueRodriguez.html">Enrique Rodriguez</a></td>
+          <td>21</td>
+          <td>7</td>
+          <td>471</td>
+          <td>46</td>
+          <td>62</td>
+          <td>53</td>
+          <td>51</td>
+          <td>14</td>
+          <td>9</td>
+          <td>23</td>
+          <td>99</td>
+          <td>122</td>
+          <td>122</td>
+          <td>3</td>
+          <td>10</td>
+          <td>1</td>
+          <td>45</td>
+          <td>17</td>
+          <td>09/27/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/FionaBarry.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/FionaBarry.html">Fiona Barry</a></td>
+          <td>31</td>
+          <td>11</td>
+          <td>405</td>
+          <td>26</td>
+          <td>51</td>
+          <td>28</td>
+          <td>55</td>
+          <td>25</td>
+          <td>1</td>
+          <td>26</td>
+          <td>134</td>
+          <td>160</td>
+          <td>154</td>
+          <td>4</td>
+          <td>5</td>
+          <td>0</td>
+          <td>68</td>
+          <td>8</td>
+          <td>09/27/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/GabrielVelicu.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/GabrielVelicu.html">Gabriel Velicu</a></td>
+          <td>29</td>
+          <td>11</td>
+          <td>753</td>
+          <td>83</td>
+          <td>104</td>
+          <td>112</td>
+          <td>104</td>
+          <td>29</td>
+          <td>6</td>
+          <td>49</td>
+          <td>198</td>
+          <td>247</td>
+          <td>243</td>
+          <td>1</td>
+          <td>18</td>
+          <td>4</td>
+          <td>53</td>
+          <td>44</td>
+          <td>12/15/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/JohnDau.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/JohnDau.html">John Dau</a></td>
+          <td>8</td>
+          <td>7</td>
+          <td>130</td>
+          <td>14</td>
+          <td>15</td>
+          <td>23</td>
+          <td>20</td>
+          <td>4</td>
+          <td>12</td>
+          <td>6</td>
+          <td>34</td>
+          <td>40</td>
+          <td>38</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0</td>
+          <td>10</td>
+          <td>8</td>
+          <td>09/18/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/LiorBarak.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/LiorBarak.html">Lior Barak</a></td>
+          <td>9</td>
+          <td>9</td>
+          <td>170</td>
+          <td>16</td>
+          <td>50</td>
+          <td>23</td>
+          <td>25</td>
+          <td>10</td>
+          <td>5</td>
+          <td>14</td>
+          <td>53</td>
+          <td>67</td>
+          <td>65</td>
+          <td>1</td>
+          <td>4</td>
+          <td>0</td>
+          <td>28</td>
+          <td>2</td>
+          <td>09/18/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/NicholasJordan.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/NicholasJordan.html">Nicholas Jordan</a></td>
+          <td>5</td>
+          <td>0</td>
+          <td>270</td>
+          <td>25</td>
+          <td>31</td>
+          <td>36</td>
+          <td>55</td>
+          <td>21</td>
+          <td>11</td>
+          <td>28</td>
+          <td>86</td>
+          <td>114</td>
+          <td>111</td>
+          <td>2</td>
+          <td>6</td>
+          <td>2</td>
+          <td>24</td>
+          <td>14</td>
+          <td>12/15/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/PeterPetracca.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/PeterPetracca.html">Peter Petracca</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>22</td>
+          <td>3</td>
+          <td>2</td>
+          <td>5</td>
+          <td>1</td>
+          <td>4</td>
+          <td>3</td>
+          <td>1</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>2</td>
+          <td>2</td>
+          <td>09/18/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/RandyLee.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/RandyLee.html">Randy Lee</a></td>
+          <td>7</td>
+          <td>1</td>
+          <td>297</td>
+          <td>36</td>
+          <td>20</td>
+          <td>25</td>
+          <td>45</td>
+          <td>6</td>
+          <td>18</td>
+          <td>10</td>
+          <td>72</td>
+          <td>82</td>
+          <td>82</td>
+          <td>3</td>
+          <td>4</td>
+          <td>0</td>
+          <td>16</td>
+          <td>23</td>
+          <td>12/15/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/StevenRogers.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/StevenRogers.html">Steven Rogers</a></td>
+          <td>17</td>
+          <td>8</td>
+          <td>317</td>
+          <td>28</td>
+          <td>55</td>
+          <td>18</td>
+          <td>41</td>
+          <td>13</td>
+          <td>6</td>
+          <td>12</td>
+          <td>78</td>
+          <td>90</td>
+          <td>85</td>
+          <td>1</td>
+          <td>3</td>
+          <td>1</td>
+          <td>27</td>
+          <td>11</td>
+          <td>09/27/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/TatianaVazansky.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/TatianaVazansky.html">Tatiana Vazansky</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>4</td>
+          <td>0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>8</td>
+          <td>2</td>
+          <td>0</td>
+          <td>2</td>
+          <td>14</td>
+          <td>16</td>
+          <td>15</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>10</td>
+          <td>0</td>
+          <td>09/27/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/TristonPassmore.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/TristonPassmore.html">Triston Passmore</a></td>
+          <td>11</td>
+          <td>4</td>
+          <td>407</td>
+          <td>59</td>
+          <td>29</td>
+          <td>57</td>
+          <td>51</td>
+          <td>18</td>
+          <td>7</td>
+          <td>29</td>
+          <td>104</td>
+          <td>133</td>
+          <td>131</td>
+          <td>1</td>
+          <td>6</td>
+          <td>1</td>
+          <td>33</td>
+          <td>33</td>
+          <td>12/15/20</td>
+        </tr>
+        <tr>
+          <td><img src="../images/Models/TylerTran.png" style="width:36px;height:50px;"
+            valign="middle"><a href="../individualStats/TylerTran.html">Tyler Tran</a></td>
+          <td>22</td>
+          <td>20</td>
+          <td>703</td>
+          <td>90</td>
+          <td>77</td>
+          <td>86</td>
+          <td>87</td>
+          <td>21</td>
+          <td>18</td>
+          <td>38</td>
+          <td>171</td>
+          <td>209</td>
+          <td>207</td>
+          <td>4</td>
+          <td>13</td>
+          <td>8</td>
+          <td>56</td>
+          <td>43</td>
+          <td>12/15/20</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script type="text/javascript">
+      /*
+         Willmaster Table Sort
+         Version 1.1
+         August 17, 2016
+         Updated GetDateSortingKey() to correctly sort two-digit months and days numbers with leading 0.
+         Version 1.0, July 3, 2011
+
+         Will Bontrager
+         https://www.willmaster.com/
+         Copyright 2011,2016 Will Bontrager Software, LLC
+
+         This software is provided "AS IS," without
+         any warranty of any kind, without even any
+         implied warranty such as merchantability
+         or fitness for a particular purpose.
+         Will Bontrager Software, LLC grants
+         you a royalty free license to use or
+         modify this software provided this
+         notice appears on all copies.
+      */
+      //
+      // One placed to customize - The id value of the table tag.
+
+      var TableIDvalue = "indextable";
+
+      //
+      //////////////////////////////////////
+      var TableLastSortedColumn = -1;
+      function SortTable() {
+      var sortColumn = parseInt(arguments[0]);
+      var type = arguments.length > 1 ? arguments[1] : 'T';
+      var dateformat = arguments.length > 2 ? arguments[2] : '';
+      var table = document.getElementById(TableIDvalue);
+      var tbody = table.getElementsByTagName("tbody")[0];
+      var rows = tbody.getElementsByTagName("tr");
+      var arrayOfRows = new Array();
+      type = type.toUpperCase();
+      dateformat = dateformat.toLowerCase();
+      for(var i=0, len=rows.length; i<len; i++) {
+      	arrayOfRows[i] = new Object;
+      	arrayOfRows[i].oldIndex = i;
+      	var celltext = rows[i].getElementsByTagName("td")[sortColumn].innerHTML.replace(/<[^>]*>/g,"");
+      	if( type=='D' ) { arrayOfRows[i].value = GetDateSortingKey(dateformat,celltext); }
+      	else {
+      		var re = type=="N" ? /[^\.\-\+\d]/g : /[^a-zA-Z0-9]/g;
+      		arrayOfRows[i].value = celltext.replace(re,"").substr(0,25).toLowerCase();
+      		}
+      	}
+      if (sortColumn == TableLastSortedColumn) { arrayOfRows.reverse(); }
+      else {
+      	TableLastSortedColumn = sortColumn;
+      	switch(type) {
+      		case "N" : arrayOfRows.sort(CompareRowOfNumbers); break;
+      		case "D" : arrayOfRows.sort(CompareRowOfNumbersD); break;
+      		default  : arrayOfRows.sort(CompareRowOfText);
+      		}
+      	}
+      var newTableBody = document.createElement("tbody");
+      for(var i=0, len=arrayOfRows.length; i<len; i++) {
+      	newTableBody.appendChild(rows[arrayOfRows[i].oldIndex].cloneNode(true));
+      	}
+      table.replaceChild(newTableBody,tbody);
+      } // function SortTable()
+
+      function CompareRowOfText(a,b) {
+      var aval = a.value;
+      var bval = b.value;
+      return( aval == bval ? 0 : (aval > bval ? 1 : -1) );
+      } // function CompareRowOfText()
+
+      function CompareRowOfNumbers(a,b) {
+      var aval = /\d/.test(a.value) ? parseFloat(a.value) : 0;
+      var bval = /\d/.test(b.value) ? parseFloat(b.value) : 0;
+      return( aval == bval ? 0 : (aval < bval ? 1 : -1) );
+      } // function CompareRowOfNumbers()
+
+      function CompareRowOfNumbersD(a,b) {
+      var aval = /\d/.test(a.value) ? parseFloat(a.value) : 0;
+      var bval = /\d/.test(b.value) ? parseFloat(b.value) : 0;
+      return( aval == bval ? 0 : (aval < bval ? 1 : -1) );
+      } // function CompareRowOfNumbers()
+
+      function GetDateSortingKey(format,text) {
+      if( format.length < 1 ) { return ""; }
+      format = format.toLowerCase();
+      text = text.toLowerCase();
+      text = text.replace(/^[^a-z0-9]*/,"");
+      text = text.replace(/[^a-z0-9]*$/,"");
+      if( text.length < 1 ) { return ""; }
+      text = text.replace(/[^a-z0-9]+/g,",");
+      var date = text.split(",");
+      if( date.length < 3 ) { return ""; }
+      var d=0, m=0, y=0;
+      for( var i=0; i<3; i++ ) {
+      	var ts = format.substr(i,1);
+      	if( ts == "d" ) { d = date[i]; }
+      	else if( ts == "m" ) { m = date[i]; }
+      	else if( ts == "y" ) { y = date[i]; }
+      	}
+      d = d.replace(/^0/,"");
+      if( d < 10 ) { d = "0" + d; }
+      if( /[a-z]/.test(m) ) {
+      	m = m.substr(0,3);
+      	switch(m) {
+      		case "jan" : m = String(1); break;
+      		case "feb" : m = String(2); break;
+      		case "mar" : m = String(3); break;
+      		case "apr" : m = String(4); break;
+      		case "may" : m = String(5); break;
+      		case "jun" : m = String(6); break;
+      		case "jul" : m = String(7); break;
+      		case "aug" : m = String(8); break;
+      		case "sep" : m = String(9); break;
+      		case "oct" : m = String(10); break;
+      		case "nov" : m = String(11); break;
+      		case "dec" : m = String(12); break;
+      		default    : m = String(0);
+      		}
+      	}
+      m = m.replace(/^0/,"");
+      if( m < 10 ) { m = "0" + m; }
+      y = parseInt(y);
+      if( y > 100 ) { y = parseInt(y) + 2000; }
+      return "" + String(y) + "" + String(m) + "" + String(d) + "";
+      } // function GetDateSortingKey()
+      </script>
+  </body>
+</html>
